@@ -3,7 +3,7 @@ import {ThemeProvider} from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 
 import Layout from './components/Layout';
-import dark from './styles/themes/dark'
+import dark from './styles/themes/dark';
 
 
 const App: React.FC = () => {
