@@ -18,7 +18,7 @@ export const TitleContainer = styled.div<ITitleContainerProps>`
   >h1 {
        color: ${props => props.theme.colors.white};
 
-       & ::after{
+       &::after{
            content:'';
            display: block;
            width: 55px;
