@@ -7,6 +7,10 @@ import { Container,
 
          } from './styles';
 
+//import formatCurrency from '../../utils/formatCurrency'
+//<Tooltip formatter={(value) => formatCurrency(Number(value))}/>
+//obs: para adicionar $ sifrão a tabela "Historico de saldo Entradas", mas n consegui atribuir um tipo ao value
+
 import {
         ResponsiveContainer,
         LineChart,
@@ -34,7 +38,15 @@ const HistoryBox : React.FC<IHistoryBoxProps> = ({
                 <Header>
                         <h2>Historico de saldo</h2>
                         <LegendContainer>
-                                <Legend></Legend>
+                                <Legend color={lineColorAmountEntry}>
+                                        <div></div>
+                                        <span>Entradas</span>
+                                </Legend>
+                        
+                                <Legend color={lineColorAmountOutPut}>
+                                        <div></div>
+                                        <span>Saídas</span>
+                                </Legend>
                         </LegendContainer>
                 </Header>
                 <ChartContainer>
