@@ -28,7 +28,7 @@ const Aside: React.FC = () => {
                <Title>Minha Carteira</Title>
             </Header>
             <MenuContainer>
-                <MenuItemLink href="/Dashboard">
+                <MenuItemLink href="/">
                     <MdDashboard/>
                     Dashboard
                 </MenuItemLink>

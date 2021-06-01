@@ -6,14 +6,13 @@ import {useTheme} from './hooks/theme'
 
 import Routes from './routes'
 
-import dark from './styles/themes/dark';
 
 const App: React.FC = () => {
     const {theme} = useTheme();
     return (
         <ThemeProvider theme={theme}>
             <GlobalStyles/>
-            <Routes/>
+               <Routes/>
          </ThemeProvider>   
     );
 }
