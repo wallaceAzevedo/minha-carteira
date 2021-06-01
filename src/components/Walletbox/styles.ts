@@ -26,17 +26,19 @@ export const Container = styled.div<IContainerProps>`
       right: -30px;
 
       opacity: .3;
-  }
+    }
 
   > span {
       font-size: 18px;
       font-weight: 500;
-  }
+    }
 
   > small {
       font-size: 12px;
       position: absolute;
       bottom: 10px;
-  }
+    }
+
+  
 `;
 
