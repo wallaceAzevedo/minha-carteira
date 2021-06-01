@@ -9,16 +9,28 @@ import {
 
 } from './styles'
 
-const Toggle: React.FC = () => (
+interface ItoggleProps {
+    labelLeft: string;
+    labelRigth:string;
+    cheked:boolean;
+    onChange():void;
+}
+
+const Toggle: React.FC<ItoggleProps> = ({
+    labelLeft,
+    labelRigth,
+    cheked,
+    onChange
+}) => (
     <Container>
-        <ToggleLabel>Ligth</ToggleLabel>
+        <ToggleLabel>{labelLeft}</ToggleLabel>
            <ToggleSelector
-             checked
+             checked={cheked}
              uncheckedIcon={false}
              checkedIcon={false}
-             onChange={() => console.log('mudou')}
+             onChange={onChange}
            />
-        <ToggleLabel>Dark</ToggleLabel>
+        <ToggleLabel>{labelRigth}</ToggleLabel>
     </Container>
 )
 
