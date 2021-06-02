@@ -15,6 +15,7 @@ export const Grid = styled.div`
      grid-template-areas:
      'AS MH'
      'AS CT';
+     min-width: 315px;
    
     height: 100vh;
 
